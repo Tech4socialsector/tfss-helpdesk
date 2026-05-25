@@ -89,6 +89,11 @@ override_doctype_class = {
     "Email Account": "helpdesk.overrides.email_account.CustomEmailAccount",
 }
 
+override_whitelisted_methods = {
+    "frappe.desk.form.assign_to.notify_assignment":
+    "helpdesk.overrides.assignment.notify_assignment",
+}
+
 ignore_links_on_delete = [
     "HD Notification",
     "HD Ticket Comment",
